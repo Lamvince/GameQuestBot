@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal text-body-emphasis title">GameQuestBot</h1>
+        <p class="fs-5 text-body-secondary subtitle">A chatbot for finding your next game.</p>
+      </div>
+    <div class="justify-content-center row mx-auto py-2 px-5">
+        <div class="col-sm-3">
+          <div class="card overlap overlap-left shadow-lg">
+            <div class="card-body">
+              <h5 class="card-title">
+                <img class="icon" src="https://www.gstatic.com/dialogflow-console/common/assets/img/logo-short.png"> 
+                About GameQuestBot
+              </h5>
+              <p>
+                GameQuestBot is an interactive chatbot designed to provide video game recommendations based on provided information. 
+              </p>
+              <p>
+                It utilizes the Dialogflow platform, which leverages natural language processing and machine learning to understand and respond to user queries.
+              </p>
+              <p>
+                GameQuestBot uses a simple algorithm to compare the user's input with a database of video games and video game metadata. The algorithm then returns the most relevant results to the user.
+              </p>
+              <p>
+                The database has been populated with over 42000 games from the rawg.io API.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card centre shadow-lg">
+            <div class="card-body">
+                <iframe
+                    class="chatbot"
+                    allow="microphone;"
+                    src="https://console.dialogflow.com/api-client/demo/embedded/d9375ba0-2800-4902-bd51-17fe0d7c77a3">
+                </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card overlap overlap-right shadow-lg">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img class="icon" src="https://www.gstatic.com/dialogflow-console/common/assets/img/logo-short.png"> 
+                  Example Queries
+                </h5>
+                Go ahead and tell GameQuestBot what you're looking for!
+                <ul>
+                  <br>
+                  <li>I want to try a brand new game</li>
+                  <li>Some retro games please</li>
+                  <li>I want to play a game like Minecraft</li>
+                  <li>Looking for games on the PC or PS5</li>
+                  <li>What are some good strategy games?</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+<div class="chat-wrapper chat-min" style="visibility:visible" opened="true">
+  <df-messenger-titlebar></df-messenger-titlebar>
+  <df-message-list></df-message-list>
+  <df-messenger-user-input></df-messenger-user-input>
+</div>

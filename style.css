@@ -1,0 +1,61 @@
+.pricing-header {
+    background-image: linear-gradient(180deg, black, transparent);
+}
+
+.title {
+    color: #fff !important;
+}
+
+.subtitle {
+    color: #fff !important;
+}
+
+body {
+    height: 100vh;
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 97.5%), url("./imgs/bkg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    background-color: #f8f8f8;
+    color: #75758b;
+}
+
+.card-title {
+    display: flex;
+    background-color: #2b303e;
+    color: white;
+    font-size: 18px;
+    font-weight: 350;
+    height: 80px;
+    align-items: center;
+}
+
+.icon {
+    max-height: 40px;
+    max-width: 40px;
+    margin: 20px;
+}
+
+.overlap {
+    margin-top: 30px; /* Adjust the value as needed */
+}
+
+.overlap-left {
+    margin-right: -30px; /* Adjust the value as needed */
+}
+
+.centre {
+    z-index: 1;
+}
+
+.overlap-right {
+    margin-left: -30px; /* Adjust the value as needed */
+}
+
+.chatbot {
+    height: 75vh;
+    width: 100%;
+}
