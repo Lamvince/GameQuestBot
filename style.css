@@ -1,5 +1,6 @@
 .pricing-header {
     background-image: linear-gradient(180deg, black, transparent);
+    width: 100%;
 }
 
 .title {
