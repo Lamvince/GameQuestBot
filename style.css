@@ -11,12 +11,18 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background-attachment: fixed;
     background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 97.5%), url("./imgs/bkg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.row {
+    flex: 1;
 }
 
 .card {
@@ -41,8 +47,23 @@ body {
 }
 
 .chatbot {
-    height: 75vh;
+    height: 72vh;
     width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #2b303e;
+    color: white;
+    flex-shrink: 0;
+    height: 40px;
+    justify-content: center;
+    width: 100%;
+}
+
+a {
+    color: white;
 }
 
 @media (min-width: 576px) {
