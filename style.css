@@ -12,7 +12,8 @@
 
 body {
     height: 100vh;
-    background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 97.5%), url("./imgs/bkg.png");
+    background-attachment: fixed;
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 97.5%), url("./imgs/bkg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,23 +40,25 @@ body {
     margin: 20px;
 }
 
-.overlap {
-    margin-top: 30px; /* Adjust the value as needed */
-}
-
-.overlap-left {
-    margin-right: -30px; /* Adjust the value as needed */
-}
-
-.centre {
-    z-index: 1;
-}
-
-.overlap-right {
-    margin-left: -30px; /* Adjust the value as needed */
-}
-
 .chatbot {
     height: 75vh;
     width: 100%;
+}
+
+@media (min-width: 576px) {
+    .overlap {
+        margin-top: 30px;
+    }
+    
+    .overlap-left {
+        margin-right: -30px;
+    }
+    
+    .centre {
+        z-index: 1;
+    }
+    
+    .overlap-right {
+        margin-left: -30px;
+    }
 }
